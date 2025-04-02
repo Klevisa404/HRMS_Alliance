@@ -49,7 +49,7 @@ public class LoginSteps extends CommonMethods {
         click(loginPage.loginBtn);
         //   step 11:  loginButton.click();
         //   step 12:  Thread.sleep(2000);
-        //   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        ///   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @Then("user is successfully logged in")

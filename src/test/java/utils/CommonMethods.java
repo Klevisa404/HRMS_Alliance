@@ -61,7 +61,7 @@ public class CommonMethods extends PageInitializer {
         waitForClickability(element);
         element.click();
     }
-
+//this will read java script
     public JavascriptExecutor getJSExecutor(){
         JavascriptExecutor js = (JavascriptExecutor) driver;
         return js;

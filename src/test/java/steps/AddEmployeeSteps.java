@@ -100,16 +100,16 @@ public class AddEmployeeSteps extends CommonMethods {
             //it will return the keys and the values of the map which we store in this
             // variable
             Map<String, String> employeeMap = itr.next();
-            sendText(addEmployeePage.firstNameLoc, employeeMap.get("firstName"));
-            sendText(addEmployeePage.middleNameLoc, employeeMap.get("middleName"));
-            sendText(addEmployeePage.lastNameLoc, employeeMap.get("lastName"));
-            sendText(addEmployeePage.photograph, employeeMap.get("Photograph"));
+            sendText(addEmployeePage.firstNameLoc, employeeMap.get("firstName")); //firstName key coming from the excel sheet
+            sendText(addEmployeePage.middleNameLoc, employeeMap.get("middleName")); //key from excel page
+            sendText(addEmployeePage.lastNameLoc, employeeMap.get("lastName")); //key from excel page
+            sendText(addEmployeePage.photograph, employeeMap.get("Photograph")); //key from excel page
             if(!addEmployeePage.checkBox.isSelected()){
                 click(addEmployeePage.checkBox);
             }
-            sendText(addEmployeePage.usernameEmp, employeeMap.get("Username"));
-            sendText(addEmployeePage.passwordEmp, employeeMap.get("Password"));
-            sendText(addEmployeePage.confirmPassword, employeeMap.get("confirmPassword"));
+            sendText(addEmployeePage.usernameEmp, employeeMap.get("Username")); //key from excel page
+            sendText(addEmployeePage.passwordEmp, employeeMap.get("Password")); //key from excel page
+            sendText(addEmployeePage.confirmPassword, employeeMap.get("confirmPassword")); //key from excel page
             //we are storing the emp id from the locator
             String empIdValue =
                     addEmployeePage.employeeIdLocator.getAttribute("value");
